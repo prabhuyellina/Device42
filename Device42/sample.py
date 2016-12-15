@@ -1,24 +1,44 @@
 import requests
 import csv
 
-class device:
-    def __init__(self):
+
+class Device:
+
+    def __init__(self, user_id, password):
         print "Hello Welcome\n"
-
-
+        self.auth=(user_id, password)
 
     #To Get the data
-    def get_method(self,url,user_id,password):
-        r=requests.get(url, auth=(user_id,password), verify=False)
+    def get_method(self, url):
+        r=requests.get(url, auth=self.auth, verify=False)
         print r.text
-    #To Insert the data
-    def post_method(self,url,user_id,password,payload):
+
+    #'To Insert the data'
+    def post_method(self,url, payload):
+
         data=csv.DictReader(open('deviceHard.csv', 'r'))
         for line in data:
-            r=requests.post(url,auth=(user_id,password), verify=False,data=line)
+            r=requests.post(url, auth=self.auth, verify=False, data=line)
             print r.status_code
 
-obj=device()
-#obj.get_method('https://192.168.2.128/api/1.0/buildings/','admin','adm!nd42')
-payload={'name':'Building2','address':'2nd Street','contact_name':'prabhu1','contact_phone':'1234567890'}
-obj.post_method('https://192.168.2.128/api/1.0/device/','admin','adm!nd42',payload)
+    def update_method(self, url, item_name, payload):
+
+        url = url + str(item_name)
+        r = requests.put(url, auth=self.auth, verify=False, data=payload)
+        print r.status_code
+
+    #'To delete the data'
+    def delete_method(self, url, device_id):
+
+        url=url + 'devices/'+str(device_id)
+        r = requests.delete(url, verify=False, auth=self.auth)
+        print r.status_code
+
+url='https://192.168.2.128/api/1.0/'
+obj=Device('admin','adm!nd42')
+#obj.get_method('https://192.168.2.128/api/1.0/devices/','admin','adm!nd42')
+payload={'name':'TXARL1-MSA1','serial_no':'SN4150198005U','customer':'prabhu1','hardware':'Physical_Hardware1'}
+#obj.post_method('https://192.168.2.128/api/1.0/device/','admin','adm!nd42',payload)
+#obj.delete_method(url,'admin','adm!nd42',2)
+obj.update_method(url ,'devices/', payload)
+
