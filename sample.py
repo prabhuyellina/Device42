@@ -13,65 +13,107 @@ class Device:
             config = ConfigParser.ConfigParser()
             config.read(file_name)
             self.user_id = config.get('Device42', 'user_id')
-            self.password = config.get('Device42', 'password')
+            self.password =  config.get('Device42', 'password')
             self.url = config.get('Device42', 'url')
             self.auth = (self.user_id, self.password)
         except:
             print "File doesn't exist"
+            return
 
-
-#To Get the Buildings List
+    '''
+    To Get the Buildings List
+    '''
     def get_buildings(self):
 
-        url=self.url + 'buildings/'
-        r=requests.get(url, auth=self.auth, verify=False)
-        print r.text
+        url=self.url+'buildings/'
+        print url
+        r=requests.request(method='GET', url=url, auth=self.auth, verify=False)
+        print r.status_code
+        return r.text
 
-# To Get the Rooms List
+    '''
+    To Get the Rooms List
+    '''
     def get_rooms(self):
 
-        url=self.url+'rooms/'
-        r=requests.get(url, auth=self.auth, verify=False)
+        url = self.url+'rooms/'
+        r = requests.request(method='GET', url=url, auth=self.auth, verify=False)
         print r.text
+        return r.text
 
-# To Get the Devices List
+    '''
+    To Get the racks List
+    '''
+    def get_racks(self):
+
+        url = self.url+'racks/'
+        r = requests.request(method='GET', url=url, auth=self.auth, verify=False)
+        print r.text
+        return r.text
+
+    '''
+    To Get the Devices List
+    '''
     def get_devices(self):
 
-        url=self.url+'devices/'
-        r=requests.get(url, auth=self.auth, verify=False)
+        url = self.url+'devices/'
+        r = requests.request(method='GET', url=url, auth=self.auth, verify=False)
         print r.text
+        return r.text
 
-    def get_method(self, url):
-        r=requests.get(url, auth=self.auth, verify=False)
-        print r.text
 
-    #'To Insert the data'
-    def post_method(self,url, item_name, payload):
+    def post_building(self, payload):
 
-        url = url + str(item_name)
-        data=csv.DictReader(open('deviceHard.csv', 'r'))
-        for line in data:
-            r=requests.post(url, auth=self.auth, verify=False, data=line)
-            print r.status_code
-
-    def update_method(self, item_name, payload):
-
-        url = self.url + str(item_name)
-        r = requests.put(url, auth=self.auth, verify=False, data=payload)
+        url = self.url + 'buildings/'
+        r=requests.request(method='POST', url=url, data=payload, auth=self.auth, verify=False)
         print r.status_code
+        return r.status_code
 
-    #'To delete the data'
-    def delete_method(self, url, device_id):
+    def post_room(self, payload):
 
-        url=url + 'devices/'+str(device_id)
-        r = requests.delete(url, verify=False, auth=self.auth)
+        url = self.url + 'rooms/'
+        r=requests.request(method='POST', url=url, data=payload, auth=self.auth, verify=False)
         print r.status_code
+        return r.status_code
+
+    def post_rack(self, payload):
+
+        url = self.url + 'racks/'
+        r=requests.request(method='POST', url=url, data=payload, auth=self.auth, verify=False)
+        print r.status_code
+        return r.status_code
+
+    def post_devices(self, payload):
+
+        url = self.url + 'devices/'
+        r=requests.request(method='POST', url=url, data=payload, auth=self.auth, verify=False)
+        print r.status_code
+        return r.status_code
+
+    def post_hardwares(self, payload):
+
+        url = self.url + 'hardwares/'
+        r=requests.request(method='POST', url=url, data=payload, auth=self.auth, verify=False)
+        print r.status_code
+        return r.status_code
+
+
 
 
 def main():
 
-    file_name= raw_input('Enter the File name to add the data\n')
-    obj=Device(file_name)
+    obj=Device(raw_input('Enter the Config File name \n'))
+    #obj.get_buildings()
+    #obj.get_rooms()
+    #obj.get_racks()
+    #obj.get_devices()
+    payload = {'name': 'Rack2_Building2', 'size': '1', 'building':'Building2', 'room':'Building2_Room2'}
+    payload={'name': 'Device1', 'hardware': 'Physical_1', 'type': 'physical'}
+    #obj.post_building(payload)
+    #obj.post_room(payload)
+    #obj.post_rack(payload)
+    #obj.post_hardwares(payload)
+    #obj.post_devices(payload)
 
 main()
 
