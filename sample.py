@@ -61,6 +61,9 @@ class Device:
         print r.text
         return r.text
 
+    '''
+    To post the building
+    '''
 
     def post_building(self, payload):
 
@@ -69,6 +72,9 @@ class Device:
         print r.status_code
         return r.status_code
 
+    '''
+    To post the room
+    '''
     def post_room(self, payload):
 
         url = self.url + 'rooms/'
@@ -76,6 +82,9 @@ class Device:
         print r.status_code
         return r.status_code
 
+    '''
+    To post the rack
+    '''
     def post_rack(self, payload):
 
         url = self.url + 'racks/'
@@ -83,6 +92,9 @@ class Device:
         print r.status_code
         return r.status_code
 
+    '''
+    To post the device
+    '''
     def post_devices(self, payload):
 
         url = self.url + 'devices/'
@@ -90,14 +102,15 @@ class Device:
         print r.status_code
         return r.status_code
 
+    '''
+    To post the hardwares
+    '''
     def post_hardwares(self, payload):
 
         url = self.url + 'hardwares/'
         r=requests.request(method='POST', url=url, data=payload, auth=self.auth, verify=False)
         print r.status_code
         return r.status_code
-
-
 
 
 def main():
