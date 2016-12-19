@@ -107,8 +107,8 @@ def main():
     #obj.get_rooms()
     #obj.get_racks()
     #obj.get_devices()
-    payload = {'name': 'Rack2_Building2', 'size': '1', 'building':'Building2', 'room':'Building2_Room2'}
-    payload={'name': 'Device1', 'hardware': 'Physical_1', 'type': 'physical'}
+    #payload = {'name': 'Rack2_Building2', 'size': '1', 'building':'Building2', 'room':'Building2_Room2'}
+    #payload={'name': 'Device1', 'hardware': 'Physical_1', 'type': 'physical'}
     #obj.post_building(payload)
     #obj.post_room(payload)
     #obj.post_rack(payload)
