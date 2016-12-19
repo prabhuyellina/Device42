@@ -18,7 +18,6 @@ class Device:
             self.auth = (self.user_id, self.password)
         except:
             print "File doesn't exist"
-            return
 
     '''
     To Get the Buildings List
