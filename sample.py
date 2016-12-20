@@ -158,9 +158,7 @@ class Device:
 
 def main():
 
-    obj=Device('Device42.cfg')
-
-    #raw_input('Enter the Config File name \n'))
+    obj=Device(raw_input('Enter the Config File name \n'))
     #obj.get_buildings()
     #obj.get_rooms()
     #obj.get_racks()
