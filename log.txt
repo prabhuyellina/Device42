@@ -1,0 +1,223 @@
+2016-12-20 13:46:11,959 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 13:46:13,209 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 13:46:13,262 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 13:46:13,644 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 13:52:15,655 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 13:52:16,743 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 13:52:16,805 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 13:52:17,125 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 13:52:20,707 Test_Building_new Building Exists
+2016-12-20 13:52:20,707 Test_Room Room Exists
+2016-12-20 13:52:21,283 No Building Name is Given for device None
+2016-12-20 13:52:21,283 No Room Name is Given for the device None
+2016-12-20 13:52:21,842 Test_Building_second Building Exists
+2016-12-20 13:52:21,842 Test_Room_Second Room Exists
+2016-12-20 13:52:22,361 Test_building_three Building Exists
+2016-12-20 13:52:22,365 Test_Room_three Room Exists
+2016-12-20 14:15:27,621 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:15:28,721 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 14:15:28,806 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:15:29,157 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 14:15:29,187 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:15:29,657 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 14:15:29,671 Test_Building_new Building Exists
+2016-12-20 14:15:29,676 Test_Room Room Exists
+2016-12-20 14:26:42,730 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:26:43,811 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 14:26:43,895 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:26:44,211 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 14:26:44,250 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:26:44,609 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 14:26:44,627 Test_Building_new Building Exists
+2016-12-20 14:26:44,630 Test_Room Room Exists
+2016-12-20 14:32:17,558 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:32:18,630 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 14:32:18,729 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:32:19,065 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 14:32:19,098 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:32:19,436 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 14:32:19,451 Test_Building_new Building Exists
+2016-12-20 14:32:19,467 Test_Room Room Exists
+2016-12-20 14:35:53,494 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:35:54,210 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 14:35:54,295 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:35:54,739 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 14:35:54,767 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:35:55,194 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 14:35:55,214 Test_Building_new Building Exists
+2016-12-20 14:35:55,214 Test_Room Room Exists
+2016-12-20 14:37:35,292 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:37:36,380 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 14:37:36,476 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:37:36,808 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 14:37:36,835 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:37:37,196 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 14:37:37,207 Test_Building_new Building Exists
+2016-12-20 14:37:37,211 Test_Room Room Exists
+2016-12-20 14:41:49,798 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:41:50,884 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 14:41:50,963 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:41:51,299 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 14:41:51,332 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:41:51,663 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 14:41:51,684 Test_Building_new Building Exists
+2016-12-20 14:41:51,684 Test_Room Room Exists
+2016-12-20 14:43:58,118 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:43:59,237 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 14:43:59,325 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:43:59,690 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 14:43:59,717 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:44:00,091 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 14:44:00,107 Test_Building_new Building Exists
+2016-12-20 14:44:00,108 Test_Room Room Exists
+2016-12-20 14:48:03,894 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:48:05,022 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 14:48:05,109 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:48:05,467 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 14:48:05,499 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:48:05,849 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 14:48:05,865 Test_Building_new Building Exists
+2016-12-20 14:48:05,865 Test_Room Room Exists
+2016-12-20 14:48:31,805 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:48:32,007 https://192.168.2.129:443 "POST /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 14:48:38,486 Test_hardware1 hardware Added Successfuly
+2016-12-20 14:49:02,072 No Building Name is Given for device Test_Unknown
+2016-12-20 14:49:02,072 No Room Name is Given for the device Test_Unknown
+2016-12-20 14:49:14,236 No hardware Name is Given for the device Test_Unknown
+2016-12-20 14:49:34,464 Test_Building_second Building Exists
+2016-12-20 14:49:34,464 Test_Room_Second Room Exists
+2016-12-20 14:49:56,000 Test_hardware2 Hardware Exists
+2016-12-20 14:50:07,911 Test_building_three Building Exists
+2016-12-20 14:50:07,911 Test_Room_three Room Exists
+2016-12-20 14:50:34,630 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 14:50:34,891 https://192.168.2.129:443 "POST /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 14:50:45,904 Test_hardware3 hardware Added Successfuly
+2016-12-20 16:29:31,125 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 16:29:32,630 https://192.168.2.129:443 "GET /api/1.0/racks/ HTTP/1.1" 200 None
+2016-12-20 16:50:23,983 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 16:50:25,095 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 16:50:26,059 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 16:50:26,398 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 16:50:26,430 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 16:50:26,773 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 16:50:26,803 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 16:50:27,369 https://192.168.2.129:443 "GET /api/1.0/racks/ HTTP/1.1" 200 None
+2016-12-20 16:50:27,388 Test_Building_new Building Exists
+2016-12-20 16:50:27,391 Test_Room Room Exists
+2016-12-20 16:50:27,394 Test_hardware1 Hardware Exists
+2016-12-20 20:15:46,979 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:15:53,273 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 20:15:54,653 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:16:01,055 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 20:16:01,082 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:16:08,194 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 20:16:08,233 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:16:14,174 https://192.168.2.129:443 "GET /api/1.0/racks/ HTTP/1.1" 200 None
+2016-12-20 20:16:14,190 Test_Building_new Building Exists
+2016-12-20 20:16:14,190 Test_Room Room Exists
+2016-12-20 20:16:14,194 Test_hardware1 Hardware Exists
+2016-12-20 20:24:12,226 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:24:13,381 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 20:24:13,453 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:24:13,802 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 20:24:13,846 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:24:14,243 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 20:24:14,273 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:24:14,924 https://192.168.2.129:443 "GET /api/1.0/racks/ HTTP/1.1" 200 None
+2016-12-20 20:24:14,937 Test_Building_new Building Exists
+2016-12-20 20:24:14,940 Test_Room Room Exists
+2016-12-20 20:24:14,944 Test_hardware1 Hardware Exists
+2016-12-20 20:26:16,351 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:26:17,562 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 20:26:17,644 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:26:18,032 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 20:26:18,059 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:26:18,407 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 20:26:18,436 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:26:18,871 https://192.168.2.129:443 "GET /api/1.0/racks/ HTTP/1.1" 200 None
+2016-12-20 20:26:18,890 Test_Building_new Building Exists
+2016-12-20 20:26:18,892 Test_Room Room Exists
+2016-12-20 20:26:18,894 Test_hardware1 Hardware Exists
+2016-12-20 20:26:40,872 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:26:41,536 https://192.168.2.129:443 "POST /api/1.0/racks/ HTTP/1.1" 200 None
+2016-12-20 20:26:49,198 Test_rack1 rack Added Successfuly
+2016-12-20 20:27:01,832 No Building Name is Given for device Test_Unknown
+2016-12-20 20:27:01,832 No Room Name is Given for the device Test_Unknown
+2016-12-20 20:27:01,832 No hardware Name is Given for the device Test_Unknown
+2016-12-20 20:27:13,917 No rack Name is Given for the device Test_Unknown
+2016-12-20 20:27:27,602 Test_Building_second Building Exists
+2016-12-20 20:27:27,602 Test_Room_Second Room Exists
+2016-12-20 20:27:27,602 Test_hardware2 Hardware Exists
+2016-12-20 20:28:39,553 Test_rack2 Rack Exists
+2016-12-20 20:28:46,637 Test_building_three Building Exists
+2016-12-20 20:28:46,637 Test_Room_three Room Exists
+2016-12-20 20:28:46,637 Test_hardware3 Hardware Exists
+2016-12-20 20:29:05,414 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 20:29:05,796 https://192.168.2.129:443 "POST /api/1.0/racks/ HTTP/1.1" 200 None
+2016-12-20 20:29:12,743 Test_rack3 rack Added Successfuly
+2016-12-20 21:05:38,823 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:05:39,940 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 21:05:40,040 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:05:40,374 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 21:05:40,411 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:05:40,819 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 21:05:40,846 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:05:41,571 https://192.168.2.129:443 "GET /api/1.0/racks/ HTTP/1.1" 200 None
+2016-12-20 21:05:41,599 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:05:42,029 https://192.168.2.129:443 "GET /api/1.0/devices/ HTTP/1.1" 200 None
+2016-12-20 21:05:42,042 Test_Building_new Building Exists
+2016-12-20 21:05:42,043 Test_Room Room Exists
+2016-12-20 21:05:42,046 Test_hardware1 Hardware Exists
+2016-12-20 21:05:42,065 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:05:42,362 https://192.168.2.129:443 "POST /api/1.0/racks/ HTTP/1.1" 200 None
+2016-12-20 21:05:42,378 Test_rack1 rack Added Successfuly
+2016-12-20 21:07:22,622 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:07:23,762 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 21:07:23,854 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:07:24,219 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 21:07:24,253 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:07:24,638 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 21:07:24,670 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:07:25,365 https://192.168.2.129:443 "GET /api/1.0/racks/ HTTP/1.1" 200 None
+2016-12-20 21:07:25,398 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:07:25,757 https://192.168.2.129:443 "GET /api/1.0/devices/ HTTP/1.1" 200 None
+2016-12-20 21:07:25,773 Test_Building_new Building Exists
+2016-12-20 21:07:25,778 Test_Room Room Exists
+2016-12-20 21:07:25,780 Test_hardware1 Hardware Exists
+2016-12-20 21:07:25,783 Test_rack1 Rack Exists
+2016-12-20 21:11:55,459 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:11:56,578 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 21:11:56,671 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:11:57,094 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 21:11:57,122 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:11:57,474 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 21:11:57,502 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:11:58,220 https://192.168.2.129:443 "GET /api/1.0/racks/ HTTP/1.1" 200 None
+2016-12-20 21:11:58,247 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:11:58,586 https://192.168.2.129:443 "GET /api/1.0/devices/ HTTP/1.1" 200 None
+2016-12-20 21:11:58,602 Test_Building_new Building Exists
+2016-12-20 21:11:58,602 Test_Room Room Exists
+2016-12-20 21:11:58,607 Test_hardware1 Hardware Exists
+2016-12-20 21:11:58,611 Test_rack1 Rack Exists
+2016-12-20 21:13:55,289 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:13:56,413 https://192.168.2.129:443 "GET /api/1.0/buildings/ HTTP/1.1" 200 None
+2016-12-20 21:13:56,513 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:13:56,845 https://192.168.2.129:443 "GET /api/1.0/rooms/ HTTP/1.1" 200 None
+2016-12-20 21:13:56,875 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:13:57,246 https://192.168.2.129:443 "GET /api/1.0/hardwares/ HTTP/1.1" 200 None
+2016-12-20 21:13:57,276 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:13:57,823 https://192.168.2.129:443 "GET /api/1.0/racks/ HTTP/1.1" 200 None
+2016-12-20 21:13:57,855 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:13:58,239 https://192.168.2.129:443 "GET /api/1.0/devices/ HTTP/1.1" 200 None
+2016-12-20 21:13:58,255 Test_Building_new Building Exists
+2016-12-20 21:13:58,259 Test_Room Room Exists
+2016-12-20 21:13:58,263 Test_hardware1 Hardware Exists
+2016-12-20 21:13:58,266 Test_rack1 Rack Exists
+2016-12-20 21:14:36,993 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-20 21:14:37,496 https://192.168.2.129:443 "POST /api/1.0/devices/ HTTP/1.1" 200 None
+2016-12-20 21:15:24,357 Test_Device device Added Successfuly
+2016-12-20 23:57:36,700 No Building Name is Given for device Device1
+2016-12-20 23:57:48,545 No Room Name is Given for the device Device1
+2016-12-20 23:57:58,552 No hardware Name is Given for the device Device1
+2016-12-20 23:57:58,552 No rack Name is Given for the device Device1
+2016-12-20 23:58:14,858 Device1 Device Exists
