@@ -123,6 +123,34 @@ class Device:
         logging.info(r.status_code)
         return r.status_code
 
+    def delete_building(self, building_id):
+        """
+        Delete a building
+        """
+        try:
+            url= self.building_url + str(building_id)
+            print url
+            r = requests.request(method='DELETE', url=url, auth=self.auth, verify=False)
+            info = 'Building %d is deleted' %(building_id)
+            logging.info(info)
+            print r.status_code
+            return r.status_code
+        except requests.exceptions.RequestException as e:
+            logging.error(e)
+
+    def delete_device(self, device_id):
+        """
+         Delete a Device
+        """
+        try:
+            url = self.device_url + str(device_id)
+            print url
+            r = requests.request(method='DELETE', url=url, auth=self.auth, verify=False)
+            logging.info(r)
+            return r.status_code
+        except requests.exceptions.RequestException as e:
+            logging.error(e)
+
     def post_data(self):
 
         '''
@@ -286,9 +314,7 @@ class Device:
 
 def main():
 
-    obj=Device('Device42.cfg')
-
-    #raw_input('Enter the Config File name \n'))
+    obj=Device(raw_input('Enter the Config File name \n'))
     #obj.get_buildings()
     #obj.get_rooms()
     #obj.get_racks()
@@ -300,7 +326,9 @@ def main():
     #obj.post_rack(payload)
     #obj.post_hardwares(payload)
     #obj.post_devices(payload)
-    obj.post_data()
+    #obj.delete_device(2)
+    #obj.delete_building(3)
+    #obj.post_data()
 
 main()
 
