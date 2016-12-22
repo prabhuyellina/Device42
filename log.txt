@@ -221,3 +221,41 @@
 2016-12-20 23:57:58,552 No hardware Name is Given for the device Device1
 2016-12-20 23:57:58,552 No rack Name is Given for the device Device1
 2016-12-20 23:58:14,858 Device1 Device Exists
+2016-12-21 23:15:11,976 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-21 23:15:18,061 https://192.168.2.129:443 "DELETE /api/1.0/buildings/2 HTTP/1.1" 301 None
+2016-12-21 23:15:26,779 https://192.168.2.129:443 "DELETE /api/1.0/buildings/2/ HTTP/1.1" 200 None
+2016-12-21 23:16:44,732 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-21 23:16:45,663 https://192.168.2.129:443 "DELETE /api/1.0/buildings/2 HTTP/1.1" 301 None
+2016-12-21 23:16:45,904 https://192.168.2.129:443 "DELETE /api/1.0/buildings/2/ HTTP/1.1" 500 None
+2016-12-21 23:20:15,072 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-21 23:20:15,996 https://192.168.2.129:443 "DELETE /api/1.0/buildings/2 HTTP/1.1" 301 None
+2016-12-21 23:20:16,237 https://192.168.2.129:443 "DELETE /api/1.0/buildings/2/ HTTP/1.1" 500 None
+2016-12-21 23:20:20,973 Building 2 is deleted
+2016-12-21 23:39:52,078 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-21 23:39:53,404 https://192.168.2.129:443 "DELETE /api/1.0/buildings/2 HTTP/1.1" 301 None
+2016-12-21 23:39:53,763 https://192.168.2.129:443 "DELETE /api/1.0/buildings/2/ HTTP/1.1" 500 None
+2016-12-21 23:39:53,767 Building 2 is deleted
+2016-12-21 23:42:18,150 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-21 23:42:19,013 https://192.168.2.129:443 "DELETE /api/1.0/buildings/2 HTTP/1.1" 301 None
+2016-12-21 23:42:19,244 https://192.168.2.129:443 "DELETE /api/1.0/buildings/2/ HTTP/1.1" 500 None
+2016-12-21 23:42:19,250 Building 2 is deleted
+2016-12-21 23:52:36,999 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-21 23:52:38,009 https://192.168.2.129:443 "DELETE /api/1.0/buildings/2 HTTP/1.1" 301 None
+2016-12-21 23:52:38,302 https://192.168.2.129:443 "DELETE /api/1.0/buildings/2/ HTTP/1.1" 500 None
+2016-12-21 23:52:38,306 Building 2 is deleted
+2016-12-21 23:59:54,490 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-21 23:59:55,459 https://192.168.2.129:443 "DELETE /api/1.0/devices/2 HTTP/1.1" 301 None
+2016-12-21 23:59:56,924 https://192.168.2.129:443 "DELETE /api/1.0/devices/2/ HTTP/1.1" 200 None
+2016-12-22 00:00:01,453 <Response [200]>
+2016-12-22 00:00:47,308 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-22 00:00:48,217 https://192.168.2.129:443 "DELETE /api/1.0/devices/2 HTTP/1.1" 301 None
+2016-12-22 00:00:48,480 https://192.168.2.129:443 "DELETE /api/1.0/devices/2/ HTTP/1.1" 500 None
+2016-12-22 00:00:48,486 <Response [500]>
+2016-12-22 00:02:40,073 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-22 00:02:41,006 https://192.168.2.129:443 "DELETE /api/1.0/devices/2 HTTP/1.1" 301 None
+2016-12-22 00:02:41,286 https://192.168.2.129:443 "DELETE /api/1.0/devices/2/ HTTP/1.1" 500 None
+2016-12-22 00:02:41,290 <Response [500]>
+2016-12-22 00:02:41,295 Starting new HTTPS connection (1): 192.168.2.129
+2016-12-22 00:02:41,398 https://192.168.2.129:443 "DELETE /api/1.0/buildings/3 HTTP/1.1" 301 None
+2016-12-22 00:02:41,825 https://192.168.2.129:443 "DELETE /api/1.0/buildings/3/ HTTP/1.1" 200 None
+2016-12-22 00:02:41,829 Building 3 is deleted
