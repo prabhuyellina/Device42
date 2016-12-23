@@ -210,7 +210,8 @@ class Device:
                     '''
 
                     column = dict((k.lower(), v)for k, v in column.iteritems())
-                    if column['building'] != 'None' and column['building'] =='':
+                    print column
+                    if column['building'] != 'None' and column['building'] !='':
                         check_match= next((entity for entity in eval(building_list)['buildings'] if column['building'] in entity.values()), None)
                         if check_match:
                             info = '%s Building Exists' %(column['building'])
@@ -235,7 +236,7 @@ class Device:
                     Checking the Room Data
                     '''
 
-                    if column['room'] != 'None' and column['room'] == '':
+                    if column['room'] != 'None' and column['room'] != '':
                         check_match = next((entity for entity in eval(room_list)['rooms'] \
                                             if column['room'] in entity.values()), None)
                         if check_match:
@@ -260,7 +261,7 @@ class Device:
                     '''
                     Checking the hardware Data
                     '''
-                    if column['hardware'] != 'unknown' and column['hardware'] == '':
+                    if column['hardware'] != 'unknown' and column['hardware'] != '':
                         null = None
                         check_match = next((entity for entity in eval(hardware_list)['models'] \
                                             if column['hardware'] in entity['name']), None)
@@ -287,7 +288,7 @@ class Device:
                     Checking the Racks Data
                     '''
 
-                    if column['rack'] != 'None' and column['rack'] == '':
+                    if column['rack'] != 'None' and column['rack'] != '':
                         true='True'
                         check_match = next((entity for entity in eval(rack_list)['racks'] \
                                             if column['room'] in entity.values()), None)
@@ -318,7 +319,7 @@ class Device:
                     Checking the Device Data
                     '''
 
-                    if column['name'] != 'None' and column['name'] == '':
+                    if column['name'] != 'None' and column['name'] != '':
                         check_match = next((entity for entity in eval(device_list)['Devices'] \
                                             if column['name'] in entity.values()), None)
                         if check_match:
@@ -376,7 +377,7 @@ def main():
     #obj.post_devices(payload)
     #obj.delete_device(2)
     #obj.delete_building(3)
-    #obj.post_data()
+    obj.post_data()
 
 main()
 
