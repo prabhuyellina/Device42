@@ -24,14 +24,14 @@ class Device:
             self.device_url = config.get('Url', 'device_url')
             self.auth = (self.user_id, self.password)
 
-            """
-            Logging Info
-            """
+
+            #Logging Info
+
             logging.basicConfig(format='%(asctime)s %(message)s', filename=self.log_file_name, level=logging.INFO)
 
         except IOError as e:
             info = "File doesn't exist"
-            logging.info(info)
+            logging.error(info, e)
 
     def get_buildings(self):
         """
@@ -39,10 +39,10 @@ class Device:
         """
 
         try:
-            r=requests.request(method='GET', url=self.building_url, auth=self.auth, verify=False)
-            info = "Executed get_buildings API and returned with status code: %s" %r.status_code
+            response=requests.request(method='GET', url=self.building_url, auth=self.auth, verify=False)
+            info = "Executed get_buildings API and returned with status code: %s" % response.status_code
             logging.info(info)
-            return r.text
+            return response.text
         except requests.exceptions.RequestException as e:
             logging.error(e)
 
@@ -52,10 +52,10 @@ class Device:
         """
 
         try:
-            r = requests.request(method='GET', url=self.room_url, auth=self.auth, verify=False)
-            info = "Executed get_rooms API and returned with status code: %s" % r.status_code
+            response = requests.request(method='GET', url=self.room_url, auth=self.auth, verify=False)
+            info = "Executed get_rooms API and returned with status code: %s" % response.status_code
             logging.info(info)
-            return r.text
+            return response.text
         except requests.exceptions.RequestException as e:
             logging.error(e)
 
@@ -65,10 +65,10 @@ class Device:
         """
 
         try:
-            r = requests.request(method='GET', url=self.hardware_url, auth=self.auth, verify=False)
-            info = "Executed get_hardwares API and returned with status code: %s" % r.status_code
+            response = requests.request(method='GET', url=self.hardware_url, auth=self.auth, verify=False)
+            info = "Executed get_hardwares API and returned with status code: %s" % response.status_code
             logging.info(info)
-            return r.text
+            return response.text
         except requests.exceptions.RequestException as e:
             logging.error(e)
 
@@ -78,23 +78,22 @@ class Device:
         """
 
         try:
-            r = requests.request(method='GET', url=self.racks_url, auth=self.auth, verify=False)
-            info = "Executed get_racks API and returned with status code: %s" % r.status_code
+            response = requests.request(method='GET', url=self.racks_url, auth=self.auth, verify=False)
+            info = "Executed get_racks API and returned with status code: %s" % response.status_code
             logging.info(info)
-            return r.text
+            return response.text
         except requests.exceptions.RequestException as e:
             logging.error(e)
-
 
     def get_devices(self):
         """
         To Get the Devices List
         """
         try:
-            r = requests.request(method='GET', url=self.device_url, auth=self.auth, verify=False)
-            info = "Executed get_devices API and returned with status code: %s" %r.status_code
+            response = requests.request(method='GET', url=self.device_url, auth=self.auth, verify=False)
+            info = "Executed get_devices API and returned with status code: %s" % response.status_code
             logging.info(info)
-            return r.text
+            return response.text
         except requests.exceptions.RequestException as e:
             logging.error(e)
 
@@ -104,10 +103,10 @@ class Device:
         """
 
         try:
-            r=requests.request(method='POST', url=self.building_url, data=payload, auth=self.auth, verify=False)
-            info = "Added Building %s and returned with status code: %s" %(payload['name'],r.status_code)
+            response=requests.request(method='POST', url=self.building_url, data=payload, auth=self.auth, verify=False)
+            info = "Added Building %s and returned with status code: %s" % (payload['name'], response.status_code)
             logging.info(info)
-            return r.status_code
+            return response.status_code
         except requests.exceptions.RequestException as e:
             logging.error(e)
 
@@ -117,10 +116,10 @@ class Device:
         """
 
         try:
-            r=requests.request(method='POST', url=self.room_url, data=payload, auth=self.auth, verify=False)
-            info = "Added Room %s and returned with status code: %s" % (payload['name'], r.status_code)
+            response=requests.request(method='POST', url=self.room_url, data=payload, auth=self.auth, verify=False)
+            info = "Added Room %s and returned with status code: %s" % (payload['name'], response.status_code)
             logging.info(info)
-            return r.status_code
+            return response.status_code
         except requests.exceptions.RequestException as e:
             logging.error(e)
 
@@ -130,10 +129,10 @@ class Device:
         """
 
         try:
-            r=requests.request(method='POST', url=self.racks_url, data=payload, auth=self.auth, verify=False)
-            info = "Added Rack %s and returned with status code: %s" % (payload['name'], r.status_code)
+            response=requests.request(method='POST', url=self.racks_url, data=payload, auth=self.auth, verify=False)
+            info = "Added Rack %s and returned with status code: %s" % (payload['name'], response.status_code)
             logging.info(info)
-            return r.status_code
+            return response.status_code
         except requests.exceptions.RequestException as e:
             logging.error(e)
 
@@ -143,10 +142,10 @@ class Device:
         """
 
         try:
-            r=requests.request(method='POST', url=self.device_url, data=payload, auth=self.auth, verify=False)
-            info = "Added Device %s and returned with status code: %s" % (payload['name'], r.status_code)
+            response=requests.request(method='POST', url=self.device_url, data=payload, auth=self.auth, verify=False)
+            info = "Added Device %s and returned with status code: %s" % (payload['name'], response.status_code)
             logging.info(info)
-            return r.status_code
+            return response.status_code
         except requests.exceptions.RequestException as e:
             logging.error(e)
 
@@ -156,10 +155,10 @@ class Device:
         """
 
         try:
-            r=requests.request(method='POST', url=self.hardware_url, data=payload, auth=self.auth, verify=False)
-            info = "Added Hardware %s and returned with status code: %s" % (payload['name'], r.status_code)
+            response=requests.request(method='POST', url=self.hardware_url, data=payload, auth=self.auth, verify=False)
+            info = "Added Hardware %s and returned with status code: %s" % (payload['name'], response.status_code)
             logging.info(info)
-            return r.status_code
+            return response.status_code
         except requests.exceptions.RequestException as e:
             logging.error(e)
 
@@ -170,11 +169,11 @@ class Device:
         try:
             url= self.building_url + str(building_id)
             print url
-            r = requests.request(method='DELETE', url=url, auth=self.auth, verify=False)
+            response = requests.request(method='DELETE', url=url, auth=self.auth, verify=False)
             info = 'Building %d is deleted' %(building_id)
             logging.info(info)
-            print r.status_code
-            return r.status_code
+            print response.status_code
+            return response.status_code
         except requests.exceptions.RequestException as e:
             logging.error(e)
 
@@ -185,9 +184,9 @@ class Device:
         try:
             url = self.device_url + str(device_id)
             print url
-            r = requests.request(method='DELETE', url=url, auth=self.auth, verify=False)
-            logging.info(r)
-            return r.status_code
+            response = requests.request(method='DELETE', url=url, auth=self.auth, verify=False)
+            logging.info(response)
+            return response.status_code
         except requests.exceptions.RequestException as e:
             logging.error(e)
 
@@ -204,6 +203,12 @@ class Device:
                 hardware_list = self.get_hardwares()
                 rack_list = self.get_racks()
                 device_list = self.get_devices()
+                # Checking the response of GET calls
+                if building_list or room_list or hardware_list or rack_list\
+                    or device_list is 'null':
+                    info= 'Unable to get the desired data'
+                    logging.info(info)
+                    return 0
                 for column in data:
                     '''
                     Checking the Building Data
@@ -212,7 +217,8 @@ class Device:
                     column = dict((k.lower(), v)for k, v in column.iteritems())
                     print column
                     if column['building'] != 'None' and column['building'] !='':
-                        check_match= next((entity for entity in eval(building_list)['buildings'] if column['building'] in entity.values()), None)
+                        check_match= next((entity for entity in eval(building_list)['buildings']\
+                                           if column['building'] in entity.values()), None)
                         if check_match:
                             info = '%s Building Exists' %(column['building'])
                             logging.info(info)
@@ -246,7 +252,7 @@ class Device:
                             '''
                             Creating a new room
                             '''
-                            payload = {'name': column['room'],'building':column['building']}
+                            payload = {'name': column['room'], 'building':column['building']}
                             return_code = self.post_room(payload)
                             if return_code == 200:
                                 info = '%s room Added Successfuly' %(column['room'])
@@ -290,7 +296,7 @@ class Device:
 
                     if column['rack'] != 'None' and column['rack'] != '':
                         true='True'
-                        check_match = next((entity for entity in eval(rack_list)['racks'] \
+                        check_match = next((entity for entity in eval(rack_list)['racks']\
                                             if column['room'] in entity.values()), None)
                         if check_match:
                             info = '%s Rack Exists' % (column['rack'])
