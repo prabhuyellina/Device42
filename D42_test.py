@@ -13,9 +13,9 @@ class TestDevice42(unittest.TestCase):
         print 'Welcome To Device42 Testing'
         config = ConfigParser.ConfigParser()
         config.read(raw_input('Enter Config file Name'))
-        Device42_cfg = config.get('Credentials', 'Device42_cfg')
+        device42_cfg = config.get('Credentials', 'Device42_cfg')
         test_log_file = config.get('Credentials', 'test_log')
-        self.d42_obj = sample.Device(Device42_cfg)
+        self.d42_obj = sample.Device(device42_cfg)
         logging.basicConfig(format='%(asctime)s %(message)s', filename=test_log_file, level=logging.DEBUG)
 
     def test_get_buildings(self):
@@ -67,6 +67,63 @@ class TestDevice42(unittest.TestCase):
             logging.info(info)
         except AttributeError as e:
             logging.error('Error Occurred while testing get_devices module', e)
+
+    def test_post_building(self):
+
+            try:
+                payload = {'name': 'Building_testing'}
+                response = self.d42_obj.post_building(payload)
+                self.assertEqual(response.status_code, 200)
+                info = 'post_buildings API is working and returned with: %s' % response
+                logging.info(info)
+            except AttributeError as e:
+                logging.error('Error Occurred while testing post_building module', e)
+
+    def test_post_room(self):
+
+        try:
+            payload = {'name': 'Room_testing', 'building': 'Building_testing'}
+            response = self.d42_obj.post_room(payload)
+            self.assertEqual(response.status_code, 200)
+            info = 'post_room API is working and returned with: %s' % response
+            logging.info(info)
+        except AttributeError as e:
+            logging.error('Error Occurred while testing post_room module', e)
+
+    def test_post_hardwares(self):
+
+        try:
+            payload = {'name': 'hardware_testing', 'type': 'physical_testing'}
+            response = self.d42_obj.post_hardwares(payload)
+            self.assertEqual(response.status_code, 200)
+            info = 'post_hardwares API is working and returned with: %s' % response
+            logging.info(info)
+        except AttributeError as e:
+            logging.error('Error Occurred while testing post_hardwares module', e)
+
+    def test_post_rack(self):
+
+        try:
+            payload = {'name': 'rack_testing', 'room': 'Room_testing', 'size': '42'}
+            response = self.d42_obj.post_rack(payload)
+            self.assertEqual(response.status_code, 200)
+            info = 'post_rack API is working and returned with: %s' % response
+            logging.info(info)
+        except AttributeError as e:
+            logging.error('Error Occurred while testing post_rack module', e)
+
+    def test_post_devices(self):
+
+        try:
+            payload = {'name': 'Device_Testing', 'type': 'physical_testing', 'hardware': 'hardware_testing',
+                       'customer': 'ABC', 'serial_no': '132',
+                       'asset_no': '123', 'uuid': '264'}
+            response = self.d42_obj.post_devices(payload)
+            self.assertEqual(response.status_code, 200)
+            info = 'post_devices API is working and returned with: %s' % response
+            logging.info(info)
+        except AttributeError as e:
+            logging.error('Error Occurred while testing post_devices module', e)
 
 
 if __name__ == '__main__':
